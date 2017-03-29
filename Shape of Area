@@ -1,0 +1,8 @@
+def shapeArea(n):
+    Dictionary = {}
+    Dictionary[1] = 1
+    for i in range(2,99999):
+        Dictionary[i] = (Dictionary[i-1] + 4*(i-1))
+    
+    return Dictionary[n]
+                    
