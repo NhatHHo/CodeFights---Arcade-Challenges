@@ -1,0 +1,5 @@
+def makeArrayConsecutive2(statues):
+    statsort = sorted(statues)
+    full = list(range(statsort[0], statsort[len(statsort)-1]+1))
+    
+    return (len(full)-len(statsort))
